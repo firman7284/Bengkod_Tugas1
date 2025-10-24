@@ -18,9 +18,9 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->group(function () {
         return view('admin.dashboard');
     })->name('admin.dashboard');
     Route::resource('polis', PoliController::class);
-    Route::resource('dokters', DokterController::class);
+    Route::resource('dokter', DokterController::class);
     Route::resource('pasien', PasienController::class);
-    Route::resource('obat', ObatController::class);
+    Route::resource('obat', ObatController::class); 
 });
 
 //Dokter
